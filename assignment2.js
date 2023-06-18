@@ -141,30 +141,67 @@ function myLastIndexOf(arr, element) {
 
 //OBJECT KEYS,
 /*
- Modify the Object class, appending a static method to the Object class.,
-  appending a static method to the Object class. Leverage the “for...in” 
-  loop.
+ Modify the Object class,appending a static method to the Object class.
+  Leverage the “for...in” loop.
 */
-function grabKeys() {}
+function grabKeys(Object) {
+  let keys = [];
+  let i = 0;
+  for (let key in Object) {
+    keys[i] = key;
+    i++;
+  }
+  return keys;
+}
+// const object1 = {
+//     a: 'somestring',
+//     b: 42,
+//     c: false
+//   };
+
+//   console.log(grabKeys(object1))
 
 //OBJECT VALUES
-function grabValues() {}
+function grabValues(Object) {
+  let values = [];
+  let i = 0;
+  for (let key in Object) {
+    values[i] = Object[key];
+    i++;
+  }
+  return values;
+}
+//    const object2 = {
+//     a: 'i love ice cream cake',
+//     b: 88,
+//     c: true
+//   };
+// console.log(grabValues(object2))
 
 /* PROBLEM(1)
-1: Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-
+1: Given an array nums, write a function to move all 0's to the end of it
+ while maintaining the relative order of the non-zero elements.
+*/
 function moveZeros (nums) {
+  let zero
+  for(let j = 0; j< nums.length; j++)
+  for(let i = 0; i<nums.length-1;i++){
+    if(nums[i] == 0){
 
+      zero = nums[i]
+      nums[i]=nums[i+1]
+      nums[i+1]=zero
+    }
+  }
+  return nums
 }
+let nums = [0,1,0,3,12]
+console.log(moveZeros(nums))
 
-
+/*
 Example:
 Input: [0,1,0,3,12]
 Output: [1,3,12,0,0]
-
-
 Note:
 You must do this in-place without making a copy of the array.
-
-
 */
