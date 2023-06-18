@@ -2,16 +2,22 @@
 //Selecting Section
 
 // 1 - select the section with an id of container without the querySelector
-
+ //1- without querySelector()
+document.getElementById(container).onclick = function(){
+    const li = document.querySelector("#first");
+    innerText = "";
+}
 // 2 - select the section with an id of container with the querySelector
+document.querySelector("#container"); //2- with querySelector()
 
 // 3 - List elements with class second
 
 var elements = document. getElementsByClassName(second);
+let listSecond = document.querySelectorAll(".second");
 
 // 4 - List elements with class Third inside ol
 
-
+let listThird = document.querySelectorAll("ol li.third");
 // 5 - Add Text Hello
 
 
@@ -33,3 +39,4 @@ li.textContent = "four";
 // 12 - Loop over the lis inside the ole tag and give them a brackground color of green
 
 // 13 - remove div with class footer
+
