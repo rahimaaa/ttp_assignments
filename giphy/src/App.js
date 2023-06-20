@@ -7,9 +7,9 @@ function App() {
   return (
     <div>
       
-      <input ></input>
+      {/* <input ></input>
       <button> Enter</button>
-      <button>Random Gif</button>
+      <button>Random Gif</button> */}
      
     <Giphy />
     
