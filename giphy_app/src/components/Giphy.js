@@ -3,7 +3,7 @@ import React from "react"
 
 export default function Giphy() {
    
-    function getGiphy() {
+    function getGif() {
         // const memesArray = memesData.data.memes
         // const randomNumber = Math.floor(Math.random() * memesArray.length)
         // const url = memesArray[randomNumber].url
@@ -17,34 +17,15 @@ export default function Giphy() {
                     placeholder="Top text"
                     className="form--input"
                 />
-                <input 
-                    type="text"
-                    placeholder="Bottom text"
-                    className="form--input"
-                />
+               
                 <button 
                     className="form--button"
-                    onClick={getMemeImage}
+                    onClick={getGif}
                 >
-                    Get a new meme image 🖼
+                    Get a new gif
                 </button>
             </div>
         </main>
     )
 }
 
-
-// import React from "react"
-
-// export default function Header() {
-//     return (
-//         <header className="header">
-//             <img 
-//                 src="./images/troll-face.png" 
-//                 className="header--image"
-//             />
-//             <h2 className="header--title">Meme Generator</h2>
-//             <h4 className="header--project">React Course - Project 3</h4>
-//         </header>
-//     )
-// }
