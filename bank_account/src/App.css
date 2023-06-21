@@ -15,7 +15,7 @@ main {
   display: flex;
   align-items: center;
   height: 65px;
-  background: blue;
+  background: red;
   color: white;
   padding: 20px;
 }
@@ -52,7 +52,7 @@ main {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: blue;
+  background: red;
   color: white;
   border: none;
   cursor: pointer;
