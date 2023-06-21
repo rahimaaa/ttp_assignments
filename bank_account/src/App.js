@@ -1,13 +1,10 @@
 
 import React, {Component} from 'react';
-// import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css"
+import LogIn from "./components/LogIn"
 import Header from "./components/Header"
 import BankAccounts from "./components/BankAccounts"
-import "./App.css"
-import { Routes, Route, Link } from "react-router-dom";
-//import HomePage from "./components/HomePage"
-import LogIn from "./components/LogIn"
-
 
 class App extends Component {
   render() {
@@ -21,14 +18,14 @@ class App extends Component {
             <Link to="/userProfile/LogIn">LogIn</Link>
           </li>
           <li>
-            <Link to="/userProfile/BankAccount">Account</Link>
+            <Link to="/userProfile/BankAccounts">Account</Link>
           </li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/LogIn" element={<LogIn />} />
-        <Route path="/BankAccount" element={<BankAccounts />} />
+        <Route path="/BankAccounts" element={<BankAccounts />} />
       </Routes>
     </div>
     );
