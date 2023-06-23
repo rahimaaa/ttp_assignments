@@ -1,11 +1,12 @@
 import React from "react"
-import Giphy from "./components/Giphy"
+import Giph from "./components/Giph"
+import "./App.css"
 
 export default function App() {
     return (
         <div>
-            
-            <Giphy />
+          
+            <Giph />
         </div>
     )
 }
